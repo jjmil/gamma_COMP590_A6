@@ -5,6 +5,8 @@ public class PaintingDisposal : MonoBehaviour
 {
     public bool haunted;
     public GameObject trash;
+    public GameObject ghost;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +25,8 @@ public class PaintingDisposal : MonoBehaviour
         if (other == trash.GetComponent("CapsuleCollider"))
         {
             if (haunted) {
-                Destroy(this);
+                ghost.SetActive(true);
+                Destroy(gameObject);
             }
             else
             {
