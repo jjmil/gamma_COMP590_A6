@@ -15,11 +15,16 @@ public class InputSwitch : MonoBehaviour
         UpdateAppearance();
     }
 
+
     private void OnMouseDown()
+    {
+        ToggleInput();
+    }
+
+    public void ToggleInput()
     {
         isOn = !isOn;
         UpdateAppearance();
-
         Debug.Log(gameObject.name + ": " + (isOn ? "1" : "0"));
     }
 
