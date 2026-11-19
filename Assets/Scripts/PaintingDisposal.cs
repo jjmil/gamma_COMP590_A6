@@ -6,7 +6,7 @@ public class PaintingDisposal : MonoBehaviour
     public bool haunted;
     public GameObject trash;
     public GameObject ghost;
-
+    public GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +26,7 @@ public class PaintingDisposal : MonoBehaviour
         {
             if (haunted) {
                 ghost.SetActive(true);
+                gameManager.CompletePuzzle("PaintDisposal");
                 Destroy(gameObject);
             }
             else

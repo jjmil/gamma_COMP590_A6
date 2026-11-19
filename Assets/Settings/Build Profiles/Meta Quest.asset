@@ -179,7 +179,7 @@ MonoBehaviour:
     - line: '|   androidApplicationEntry: 2'
     - line: '|   defaultIsNativeResolution: 1'
     - line: '|   macRetinaSupport: 1'
-    - line: '|   runInBackground: 0'
+    - line: '|   runInBackground: 1'
     - line: '|   muteOtherAudioSources: 0'
     - line: '|   Prepare IOS For Recording: 0'
     - line: '|   Force IOS Speakers When Recording: 0'
@@ -275,12 +275,12 @@ MonoBehaviour:
     - line: '|     tvOS: 0'
     - line: '|   overrideDefaultApplicationIdentifier: 1'
     - line: '|   AndroidBundleVersionCode: 1'
-    - line: '|   AndroidMinSdkVersion: 29'
-    - line: '|   AndroidTargetSdkVersion: 32'
+    - line: '|   AndroidMinSdkVersion: 32'
+    - line: '|   AndroidTargetSdkVersion: 34'
     - line: '|   AndroidPreferredInstallLocation: 0'
     - line: '|   AndroidPreferredDataLocation: 1'
     - line: '|   aotOptions: '
-    - line: '|   stripEngineCode: 1'
+    - line: '|   stripEngineCode: 0'
     - line: '|   iPhoneStrippingLevel: 0'
     - line: '|   iPhoneScriptCallOptimization: 0'
     - line: '|   ForceInternetPermission: 0'
@@ -933,8 +933,8 @@ MonoBehaviour:
     - line: '|   webWasm2023: 0'
     - line: '|   webEnableSubmoduleStrippingCompatibility: 0'
     - line: '|   scriptingDefineSymbols:'
-    - line: '|     Android: OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING'
-    - line: '|     Standalone: OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING'
+    - line: '|     Android: OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING;SENTIS_ANALYTICS_ENABLED;APP_UI_EDITOR_ONLY;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
+    - line: '|     Standalone: OVR_DISABLE_HAND_PINCH_BUTTON_MAPPING;USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS'
     - line: '|   additionalCompilerArguments: {}'
     - line: '|   platformArchitecture: {}'
     - line: '|   scriptingBackend:'
@@ -1082,7 +1082,7 @@ MonoBehaviour:
         m_DebugSymbolFormat: 5
         m_CurrentDeploymentTargetId: __builtin__target_default
         m_BuildType: 2
-        m_LinkTimeOptimization: 0
+        m_LinkTimeOptimization: 1
         m_BuildAppBundle: 0
         m_IPAddressToConnect: 
         m_SymlinkSources: 0

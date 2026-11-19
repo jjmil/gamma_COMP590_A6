@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class CircuitManager : MonoBehaviour
 {
+    public GameManager gameManager;
     public enum OutputState
     {
         High,
@@ -84,6 +85,7 @@ public class CircuitManager : MonoBehaviour
             puzzleSolved = true;
             Debug.Log("NAND circuit solved!");
             onPuzzleSolved?.Invoke();
+            gameManager.CompletePuzzle("Circuit");
         }
     }
 }

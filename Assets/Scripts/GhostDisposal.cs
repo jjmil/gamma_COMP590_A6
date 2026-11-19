@@ -4,6 +4,7 @@ using UnityEngine;
 public class GhostDisposal : MonoBehaviour
 {
     public GameObject trash;
+    public GameManager gameManager;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class GhostDisposal : MonoBehaviour
     {
         if (other == trash.GetComponent("CapsuleCollider"))
         {
+            gameManager.CompletePuzzle("Ghost");
             Destroy(gameObject);
         }
     }
